@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  background-color: #615738;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px)
+{
+    #name
+    {
+        color: #A18835;
+        font-size: 7rem;
+        margin: 0;
+        margin-left: -400px;
+        margin-top: 300px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+
+    #three
+    {
+        color: #011FE0;
+        font-size: 7rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+
+    #two
+    {
+        color: #E0B012;
+        font-size: 7rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:1200px)
+{
+#name
+    {
+        color: #A18835;
+        font-size: 7.5rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+
+    #three
+    {
+        color: #011FE0;
+        font-size: 7.5rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+
+    #two
+    {
+        color: #E0B012;
+        font-size: 7.5rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+}
+
+@media screen and (min-width: 1201px)
+{
+#name
+    {
+        color: #A18835;
+        font-size: 14rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+
+    #three
+    {
+        color: #011FE0;
+        font-size: 14rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+
+    #two
+    {
+        color: #E0B012;
+        font-size: 14rem;
+        margin: 0;
+        margin-left: -400px;
+        white-space: nowrap;
+        transition: all 2s ease;
+    }
+}
+
+
+
+.container {
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+h1 {
+  font-size: 14rem;
+  color: red;
+  margin: 0;
+  margin-left: -400px;
+  white-space: nowrap;
+}
+
+.animate {
+  display: inline-block;
+  position: relative;
+  animation: slideRight 4s infinite alternate ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.animate:hover {
+  animation-play-state: paused;
+  background-color: #3A458B;
+}
+
+@keyframes slideRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: 400px;
+  }
+}
