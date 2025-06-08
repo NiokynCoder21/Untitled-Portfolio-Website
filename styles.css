@@ -38,11 +38,22 @@
       overflow: hidden;
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
    }
 }
 
 @media screen and (min-width: 601px) and (max-width:1200px)
 {
+
+   body
+   {
+      background-image: url('BrickWall3\ Phone\ Landscape.png'); 
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
 #name
     {
         color: #A18835;
@@ -78,18 +89,22 @@
 {
    body
    {
-      background-image: url('BrickWall2.png'); 
+      background-image: url('BrickWall3\ Laptop\ Screen.png'); 
       overflow: hidden;
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      
    }
 
 #name
     {
         color: #A18835;
-        font-size: 13rem;
+        font-size: 5.5rem;
         margin: 0;
-        margin-left: -400px;
+        margin-left: 525px;
+        margin-top: 40px;
         white-space: nowrap;
         transition: all 2s ease;
     }
@@ -97,9 +112,10 @@
     #three
     {
         color: #011FE0;
-        font-size: 13rem;
+        font-size: 6rem;
         margin: 0;
-        margin-left: -400px;
+        margin-left: 390px;
+        margin-top: 430px;
         white-space: nowrap;
         transition: all 2s ease;
     }
@@ -107,9 +123,10 @@
     #two
     {
         color: #E0B012;
-        font-size: 13rem;
+        font-size: 6rem;
         margin: 0;
-        margin-left: -400px;
+        margin-left: 970px;
+        margin-top: -110px;
         white-space: nowrap;
         transition: all 2s ease;
     }
@@ -123,31 +140,5 @@
   white-space: nowrap; 
 }
 
-h1 {
-  font-size: 14rem;
-  color: red;
-  margin: 0;
-  margin-left: -400px;
-  white-space: nowrap;
-}
 
-.animate {
-  display: inline-block;
-  position: relative;
-  animation: slideRight 4s infinite alternate ease-in-out;
-  transition: background-color 0.3s ease;
-}
 
-.animate:hover {
-  animation-play-state: paused;
-  background-color: #3A458B;
-}
-
-@keyframes slideRight {
-  from {
-    left: 0;
-  }
-  to {
-    left: 400px;
-  }
-}
