@@ -101,10 +101,10 @@
 #name
     {
         color: #A18835;
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         margin: 0;
-        margin-left: 525px;
-        margin-top: 40px;
+        margin-left: 425px;
+        margin-top: 50px;
         white-space: nowrap;
         transition: all 2s ease;
     }
@@ -114,8 +114,8 @@
         color: #011FE0;
         font-size: 6rem;
         margin: 0;
-        margin-left: 390px;
-        margin-top: 430px;
+        margin-left: 290px;
+        margin-top: 330px;
         white-space: nowrap;
         transition: all 2s ease;
     }
@@ -125,7 +125,7 @@
         color: #E0B012;
         font-size: 6rem;
         margin: 0;
-        margin-left: 970px;
+        margin-left: 750px;
         margin-top: -110px;
         white-space: nowrap;
         transition: all 2s ease;
