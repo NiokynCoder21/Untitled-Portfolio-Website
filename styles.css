@@ -4,32 +4,38 @@
     #name
     {
         color: #A18835;
-        font-size: 7rem;
-        margin: 0;
-        margin-left: -400px;
-        margin-top: 300px;
+        font-size: 2rem;
+        margin-left: 50px;
+        margin-top: 600px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        bottom: 520px;
+        left: 10px;
     }
 
     #three
     {
         color: #011FE0;
-        font-size: 7rem;
-        margin: 0;
-        margin-left: -400px;
+        font-size: 2rem;
+        margin-left: 50px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        bottom: 330px;
+        left: 70px;
     }
 
     #two
     {
         color: #E0B012;
-        font-size: 7rem;
-        margin: 0;
-        margin-left: -400px;
+        font-size: 2rem;
+        margin-left: 50px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        bottom: 130px;
+        left: 70px;
     }
 
    body
@@ -57,31 +63,39 @@
 #name
     {
         color: #A18835;
-        font-size: 7.5rem;
+        font-size: 2.7rem;
         margin: 0;
-        margin-left: -400px;
+        margin-left: 255px;
+        margin-bottom: 100px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        top: 25px;
+        left: 40px;
     }
 
     #three
     {
         color: #011FE0;
-        font-size: 7.5rem;
-        margin: 0;
-        margin-left: -400px;
+        font-size: 2.7rem;
+        margin-left: 195px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        top: 100px;
+        left: 30px;
     }
 
     #two
     {
         color: #E0B012;
-        font-size: 7.5rem;
-        margin: 0;
-        margin-left: -400px;
+        font-size: 2.7rem;
+        margin-left: 195px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        left: 350px;
+        top: 30px;
     }
 }
 
@@ -107,6 +121,8 @@
         margin-top: 50px;
         white-space: nowrap;
         transition: all 2s ease;
+        position: relative;
+        top: 50px;
     }
 
     #three
