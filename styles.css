@@ -34,7 +34,7 @@
 
    body
    {
-      background-image: url('images/BrickWall3\ Phone\ Portrait.png'); 
+      /*background-image: url('images/BrickWall3\ Phone\ Portrait.png'); */
       overflow: hidden;
       background-size: cover;
       background-position: center;
@@ -89,7 +89,7 @@
 {
    body
    {
-      background-image: url('images/BrickWall3\ Laptop\ Screen.png'); 
+      /*background-image: url('images/BrickWall3\ Laptop\ Screen.png'); */
       overflow: hidden;
       background-size: cover;
       background-position: center;
