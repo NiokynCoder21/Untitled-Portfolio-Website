@@ -1,153 +1,135 @@
-
-@media screen and (max-width: 600px)
-{
-    #name
-    {
-        color: #A18835;
-        font-size: 2rem;
-        margin-left: 50px;
-        margin-top: 600px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        bottom: 520px;
-        left: 10px;
-    }
-
-    #three
-    {
-        color: #011FE0;
-        font-size: 2rem;
-        margin-left: 50px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        bottom: 330px;
-        left: 70px;
-    }
-
-    #two
-    {
-        color: #E0B012;
-        font-size: 2rem;
-        margin-left: 50px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        bottom: 130px;
-        left: 70px;
-    }
-
-   body
-   {
-      background-image: url('images/BrickWall3\ Phone\ Portrait.png'); 
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-   }
+.gridWrapper {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-@media screen and (min-width: 601px) and (max-width:1200px)
-{
-
-   body
-   {
-      background-image: url('images/BrickWall3\ Phone\ Landscape.png'); 
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-   }
-
-#name
-    {
-        color: #A18835;
-        font-size: 2.7rem;
-        margin: 0;
-        margin-left: 255px;
-        margin-bottom: 100px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        top: 25px;
-        left: 40px;
-    }
-
-    #three
-    {
-        color: #011FE0;
-        font-size: 2.7rem;
-        margin-left: 195px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        top: 100px;
-        left: 30px;
-    }
-
-    #two
-    {
-        color: #E0B012;
-        font-size: 2.7rem;
-        margin-left: 195px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        left: 350px;
-        top: 30px;
-    }
+/* General Styles for All Containers */
+.nameCointainer,
+.deeContainer,
+.aContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
 }
 
-@media screen and (min-width: 1201px)
-{
-   body
-   {
-      background-image: url('images/BrickWall3\ Laptop\ Screen.png');
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;    
-   }
-
-#name
-    {
-        color: #A18835;
-        font-size: 4.5rem;
-        margin: 0;
-        margin-left: 425px;
-        margin-top: 50px;
-        white-space: nowrap;
-        transition: all 2s ease;
-        position: relative;
-        top: 50px;
-    }
-
-    #three
-    {
-        color: #011FE0;
-        font-size: 6rem;
-        margin: 0;
-        margin-left: 290px;
-        margin-top: 330px;
-        white-space: nowrap;
-        transition: all 2s ease;
-    }
-
-    #two
-    {
-        color: #E0B012;
-        font-size: 6rem;
-        margin: 0;
-        margin-left: 750px;
-        margin-top: -110px;
-        white-space: nowrap;
-        transition: all 2s ease;
-    }
+/* Text Styling */
+.name {
+  font-size: 3rem;
+  color: #A18835;
 }
 
+.three {
+  font-size: 3rem;
+  color: #011FE0;
+}
 
+.two {
+  font-size: 3rem;
+  color: #E0B012;
+}
+
+@media screen and (max-width: 600px) {
+  .gridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .nameContainer {
+    height: 100px;
+    width: 100px;
+  }
+
+  .deeContainer {
+    height: 150px;
+    width: 220px;
+  }
+
+  .aContainer {
+    height: 100px;
+    width: 100px;
+  }
+
+  .name, .three, .two {
+    font-size: 2.5rem;
+  }
+
+  body {
+    background-image: url("images/BrickWall3 Phone Portrait.png");
+    background-size: cover;
+    background-position: 20% 0%;
+    background-repeat: no-repeat;
+    height: 45vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .gridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .nameContainer,
+  .deeContainer,
+  .aContainer {
+    width: 300px;
+    height: 130px;
+  }
+
+  .name, .three, .two {
+    font-size: 4rem;
+  }
+
+  body {
+    background-image: url("images/BrickWall3 Phone Landscape.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .gridWrapper {
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "name three two";
+    justify-content: space-around;
+  }
+
+  .nameContainer {
+    grid-area: name;
+    width: 555px;
+    height: 300px;
+  }
+
+  .deeContainer {
+    grid-area: three;
+    width: 395px;
+    height: 280px;
+  }
+
+  .aContainer {
+    grid-area: two;
+    width: 395px;
+    height: 280px;
+  }
+
+  .name, .three, .two {
+    font-size: rem;
+  }
+
+  body {
+    background-image: url("images/BrickWall3 Laptop Screen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
 
 
 
