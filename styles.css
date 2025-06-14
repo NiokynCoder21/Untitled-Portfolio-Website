@@ -33,6 +33,10 @@ h1
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
   animation: hueShift 5s infinite alternate;
+
+      text-shadow:
+    0 0 20px #4e43e0,
+    0 0 40px #4e43e0;
 }
 
 .dee
@@ -68,6 +72,11 @@ h1
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
   animation: hueShift 5s infinite alternate;
+
+      text-shadow:
+    0 0 20px #4e43e0,
+    0 0 40px #4e43e0;
+  
 }
 
 .dee
@@ -102,6 +111,10 @@ h1
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
   animation: hueShift 5s infinite alternate;
+
+    text-shadow:
+    0 0 20px #4e43e0,
+    0 0 40px #4e43e0;
 }
 
 .dee
