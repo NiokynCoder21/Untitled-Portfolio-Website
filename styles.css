@@ -8,7 +8,6 @@ body
 {
   padding: 1em;
   text-align: center;
-  border: 1px solid white;
   border-radius: 10px;
 }
 
@@ -33,6 +32,7 @@ h1
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
+  animation: hueShift 5s infinite alternate;
 }
 
 .dee
@@ -67,6 +67,7 @@ h1
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
+  animation: hueShift 5s infinite alternate;
 }
 
 .dee
@@ -100,6 +101,7 @@ h1
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
+  animation: hueShift 5s infinite alternate;
 }
 
 .dee
@@ -118,6 +120,25 @@ h1
   font-style: normal;
 }
 
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 20px #4e43e0,
+      0 0 40px #4e43e0;
+  }
+
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+@keyframes hueShift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(20deg); }
 }
 
 
