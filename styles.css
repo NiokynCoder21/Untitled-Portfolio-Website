@@ -57,6 +57,11 @@ h1
   font-style: normal;
 }
 
+.card:hover .name 
+{
+  animation: flicker 5s infinite;
+}
+
 }
 
 
@@ -99,6 +104,11 @@ h1
   font-style: normal;
 }
 
+.card:hover .name 
+{
+  animation: flicker 5s infinite;
+}
+
 }
 
 @media screen and (min-width: 1201px) {
@@ -137,6 +147,11 @@ h1
   font-style: normal;
 }
 
+.card:hover .name 
+{
+  animation: flicker 5s infinite;
+}
+
 }
 
 @keyframes flicker {
@@ -152,6 +167,8 @@ h1
     text-shadow: none;
   }
 }
+
+
 
 @keyframes hueShift {
   0% { filter: hue-rotate(0deg); }
