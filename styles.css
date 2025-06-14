@@ -19,11 +19,19 @@ body
   justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-h1
+.card:hover .name 
 {
-    font-size: 3rem;
-    transition: all 2s ease;
+  animation: flicker 5s infinite;
+}
+
+.card:hover .dee 
+{
+  animation: flicker-yellow 5s infinite;
+}
+
+.card:hover .two 
+{
+  animation: flicker-orange 5s infinite;
 }
 
 .name
@@ -32,6 +40,7 @@ h1
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
+
   animation: hueShift 5s infinite alternate;
 
       text-shadow:
@@ -47,6 +56,10 @@ h1
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
+
+    text-shadow: 0 0 20px #F5EE42, 0 0 40px #F5EE42;
+
+      animation: hueShift 5s infinite alternate;
 }
 
 .two
@@ -55,11 +68,17 @@ h1
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
+
+  text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
+  
+  animation: hueShift 5s infinite alternate;
 }
 
-.card:hover .name 
+@media screen and (max-width: 600px) {
+h1
 {
-  animation: flicker 5s infinite;
+    font-size: 3rem;
+    transition: all 2s ease;
 }
 
 }
@@ -72,43 +91,6 @@ h1
     transition: all 2s ease;
 }
 
-.name
-{
-  color: #4e43e0;
-  font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
-  font-style: normal;
-  animation: hueShift 5s infinite alternate;
-
-      text-shadow:
-    0 0 5px #4e43e0,
-    0 0 10px #4e43e0,
-    0 0 20px #4e43e0,
-    0 0 40px #4e43e0;
-  
-}
-
-.dee
-{
-  color: #F5EE42;
-  font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
-  font-style: normal;
-}
-
-.two
-{
-  color: #F5C549;
-  font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
-  font-style: normal;
-}
-
-.card:hover .name 
-{
-  animation: flicker 5s infinite;
-}
-
 }
 
 @media screen and (min-width: 1201px) {
@@ -118,47 +100,14 @@ h1
     transition: all 2s ease;
 }
 
-.name
-{
-  color: #4e43e0;
-  font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
-  font-style: normal;
-  animation: hueShift 5s infinite alternate;
-
-    text-shadow:
-    0 0 20px #4e43e0,
-    0 0 40px #4e43e0;
-}
-
-.dee
-{
-  color: #F5EE42;
-  font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
-  font-style: normal;
-}
-
-.two
-{
-  color: #F5C549;
-  font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
-  font-style: normal;
-}
-
-.card:hover .name 
-{
-  animation: flicker 5s infinite;
-}
-
 }
 
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
-      0 0 20px #4e43e0,
+      0 0 5px #4e43e0,
+      0 0 10px #4e43e0,
       0 0 40px #4e43e0;
   }
 
@@ -168,7 +117,33 @@ h1
   }
 }
 
+@keyframes flicker-yellow {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #F5EE42,
+      0 0 10px #F5EE42,
+      0 0 40px #F5EE42;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
 
+@keyframes flicker-orange {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #F5C549,
+      0 0 10px #F5C549,
+      0 0 40px #F5C549;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
 
 @keyframes hueShift {
   0% { filter: hue-rotate(0deg); }
