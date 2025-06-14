@@ -1,138 +1,50 @@
-.gridWrapper {
+body
+{
+  padding: min(50px, 7%);
+  background-color: gray;
+}
+
+.card
+{
+  padding: 1em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.grid-container
+{
   display: grid;
-  gap: 20px;
+  border: 1px solid red;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 5px;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* General Styles for All Containers */
-.nameCointainer,
-.deeContainer,
-.aContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-}
-
-/* Text Styling */
-.name {
-  font-size: 3rem;
-  color: #A18835;
-}
-
-.three {
-  font-size: 3rem;
-  color: #011FE0;
-}
-
-.two {
-  font-size: 3rem;
-  color: #E0B012;
 }
 
 @media screen and (max-width: 600px) {
-  .gridWrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .nameContainer {
-    height: 100px;
-    width: 100px;
-  }
-
-  .deeContainer {
-    height: 150px;
-    width: 220px;
-  }
-
-  .aContainer {
-    height: 100px;
-    width: 100px;
-  }
-
-  .name, .three, .two {
-    font-size: 1.5rem;
-  }
-
-  body {
-    background-image: url("images/BrickWall3 Phone Portrait.png");
-    background-size: cover;
-    background-position: 20% 0%;
-    background-repeat: no-repeat;
-    height: 45vh;
-    overflow: hidden;
-  }
+h1
+{
+    font-size: 3rem;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
-  .gridWrapper {
-    grid-template-columns: 1fr;
-  }
+}
 
-  .nameContainer,
-  .deeContainer,
-  .aContainer {
-    width: 100px;
-    height: 100px;
-  }
 
-  .name, .three, .two {
-    font-size: 3rem;
-  }
+@media screen and (min-width: 601px) and (max-width:1200px) {
+h1
+{
+    font-size: 7rem;
+}
 
-  body {
-    background-image: url("images/BrickWall3 Phone Landscape.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    height: 85vh;
-  }
 }
 
 @media screen and (min-width: 1201px) {
-  .gridWrapper {
-    grid-template-columns: repeat(3, auto);
-    grid-template-areas: "name three two";
-    justify-content: space-around;
-  }
-
-  .nameContainer {
-    grid-area: name;
-    width: 555px;
-    height: 300px;
-  }
-
-  .deeContainer {
-    grid-area: three;
-    width: 395px;
-    height: 280px;
-  }
-
-  .aContainer {
-    grid-area: two;
-    width: 395px;
-    height: 280px;
-  }
-
-  .name, .three, .two {
-    font-size: rem;
-  }
-
-  body {
-    background-image: url("images/BrickWall3 Laptop Screen.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
-  }
+h1
+{
+    font-size: 9rem;
 }
 
-
+}
 
 
 
