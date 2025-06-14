@@ -34,6 +34,21 @@ body
   animation: flicker-orange 5s infinite;
 }
 
+body:has(.card:hover .two) {
+  background-color:  #4e43e0;
+  transition: background-color 0.5s ease;
+}
+
+body:has(.card:hover .dee) {
+  background-color: #F5C549;
+  transition: background-color 0.5s ease;
+}
+
+body:has(.card:hover .name) {
+  background-color:  #F5EE42;
+  transition: background-color 0.5s ease;
+}
+
 .name
 {
   color: #4e43e0;
