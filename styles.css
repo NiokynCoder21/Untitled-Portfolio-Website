@@ -1,21 +1,20 @@
 body
 {
   padding: min(50px, 7%);
-  background-color: gray;
+  background-color: black;
 }
 
 .card
 {
   padding: 1em;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 10px;
 }
 
 .grid-container
 {
   display: grid;
-  border: 1px solid red;
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: 5px;
   justify-content: center;
@@ -25,6 +24,31 @@ body
 h1
 {
     font-size: 3rem;
+    transition: all 2s ease;
+}
+
+.name
+{
+  color: #4e43e0;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+}
+
+.dee
+{
+  color: #F5EE42;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+}
+
+.two
+{
+  color: #F5C549;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
 }
 
 }
@@ -34,6 +58,31 @@ h1
 h1
 {
     font-size: 7rem;
+    transition: all 2s ease;
+}
+
+.name
+{
+  color: #4e43e0;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+}
+
+.dee
+{
+  color: #F5EE42;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+}
+
+.two
+{
+  color: #F5C549;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
 }
 
 }
@@ -42,6 +91,31 @@ h1
 h1
 {
     font-size: 9rem;
+    transition: all 2s ease;
+}
+
+.name
+{
+  color: #4e43e0;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+}
+
+.dee
+{
+  color: #F5EE42;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+}
+
+.two
+{
+  color: #F5C549;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
 }
 
 }
