@@ -35,6 +35,8 @@ h1
   animation: hueShift 5s infinite alternate;
 
       text-shadow:
+    0 0 5px #4e43e0,
+    0 0 10px #4e43e0,
     0 0 20px #4e43e0,
     0 0 40px #4e43e0;
 }
@@ -74,6 +76,8 @@ h1
   animation: hueShift 5s infinite alternate;
 
       text-shadow:
+    0 0 5px #4e43e0,
+    0 0 10px #4e43e0,
     0 0 20px #4e43e0,
     0 0 40px #4e43e0;
   
