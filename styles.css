@@ -19,35 +19,35 @@ body
   justify-content: center;
 }
 
-.card:hover .name 
+.name:hover 
 {
   animation: flicker 5s infinite;
 }
 
-.card:hover .dee 
+.dee:hover 
 {
   animation: flicker-yellow 5s infinite;
 }
 
-.card:hover .two 
+.two:hover
 {
   animation: flicker-orange 5s infinite;
 }
 
-body:has(.card:hover .two) {
+/*body:has(.two:hover) {
   background-color:  #4e43e0;
   transition: background-color 0.5s ease;
 }
 
-body:has(.card:hover .dee) {
-  background-color: #F5C549;
+body:has(.dee:hover) {
+  background-color: #cca43e;
   transition: background-color 0.5s ease;
 }
 
-body:has(.card:hover .name) {
-  background-color:  #F5EE42;
+body:has(.name:hover) {
+  background-color:  #c4bf36;
   transition: background-color 0.5s ease;
-}
+}*/
 
 .name
 {
