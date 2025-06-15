@@ -11,6 +11,11 @@ body
   border-radius: 10px;
 }
 
+.card a {
+  text-decoration: none;
+  color: inherit; /* Keep the text color same as h1 */
+}
+
 .grid-container
 {
   display: grid;
