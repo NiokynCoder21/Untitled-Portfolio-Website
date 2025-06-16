@@ -20,12 +20,18 @@ h2
   color: white;
 }
 
-.image
+img
+{
+  width: 100%;
+  height: auto;
+}
+
+/*.image
 {
   padding: 11em;
   border: 1px solid white;
   border-radius: 10px;
-}
+}*/
 
 
 .card
