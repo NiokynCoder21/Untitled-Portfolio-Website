@@ -40,7 +40,6 @@ h2
 .card
 {
   padding: 1em;
-  border: 1px solid white;
   border-radius: 10px;
 }
 
@@ -48,7 +47,6 @@ h2
 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  border: 1px solid red;
   gap: 15px;
   justify-content: center;
 }

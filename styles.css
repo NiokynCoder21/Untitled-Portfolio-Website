@@ -29,7 +29,7 @@ body
   animation: flicker 5s infinite;
 }
 
-.dee:hover 
+.h1:hover 
 {
   animation: flicker-yellow 5s infinite;
 }
@@ -137,7 +137,8 @@ h1
   }
 }
 
-@keyframes flicker-yellow {
+@keyframes flicker-yellow 
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:

@@ -3,13 +3,49 @@ body
   background-color: black;
 }
 
+@keyframes hueShift 
+{
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(20deg); }
+}
+
+@keyframes flicker-yellow 
+{
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #F5EE42,
+      0 0 10px #F5EE42,
+      0 0 40px #F5EE42;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+h1:hover
+{
+    animation: flicker-yellow 5s infinite;
+}
+
+/*.card:has(h1:hover) 
+{
+  background-color:  rgba(128, 128, 128, 0.058);
+  transition: background-color 0.5s ease;
+}*/
+
 h1
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
-  color: white;
+  color: #F5EE42;
   text-align: center;
+
+  text-shadow: 0 0 20px #F5EE42, 0 0 40px #F5EE42;
+
+  animation: hueShift 5s infinite alternate;
 }
 
 h2
@@ -17,7 +53,11 @@ h2
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
-  color: white;
+  color: #F5EE42;
+
+  text-shadow: 0 0 20px #F5EE42, 0 0 40px #F5EE42;
+
+  animation: hueShift 10s infinite alternate;
 }
 
 .image {
@@ -40,7 +80,6 @@ h2
 .card
 {
   padding: 1em;
-  border: 1px solid white;
   border-radius: 10px;
 }
 
@@ -48,7 +87,6 @@ h2
 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  border: 1px solid red;
   gap: 15px;
   justify-content: center;
 }
