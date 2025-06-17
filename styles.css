@@ -11,6 +11,21 @@ body
   border-radius: 10px;
 }
 
+.fade-out {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black; /* or white, or any color */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+.fade-out.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
 .card a {
   text-decoration: none;
   color: inherit; /* Keep the text color same as h1 */

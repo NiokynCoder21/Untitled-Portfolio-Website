@@ -26,20 +26,88 @@ body
   background-color: black; /* ← so black bars show */
 }
 
+img 
+{
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover 
+{
+    transform: scale(1.2); /* Enlarges image by 20% on hover */
+}
+
 h1
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
-  color: white;
+  color: #F5EE42;
   text-align: left;
+}
+
+h2
+{
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+  color: #F5EE42;
+  text-align:end;
+}
+
+.description
+{
+    background-color: rgba(87, 87, 87, 0.289);
+    border-radius: 10px;
+}
+
+p
+{
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+  color: #F5EE42;
+  text-align: left;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(87, 87, 87, 0.289);
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.icon-container img {
+    width: 20px; /* Adjust as needed */
+    height: 20px;
+    margin-right: 10px;
+}
+
+.label {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .card
 {
   padding: 0.5em;
   border-radius: 10px;
-  border: solid white;
+  border: solid  rgba(128, 128, 128, 0.298);
+}
+
+
+.wordcard
+{
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.bigcard
+{
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 .grid-container
@@ -47,7 +115,7 @@ h1
   display: grid;
   grid-auto-rows: 200px;
   grid-auto-rows: 200px;
-  border: solid red;
+  /*border: solid red;*/
   gap: 1em;
   grid-template-areas: "box-1 box-1 box-2"
   "box-1 box-1 box-2"
@@ -77,7 +145,6 @@ h1
   transition: transform 0.5s ease;
 }
 
-/* When active, show overlay and animate */
 #fullscreen-overlay.active {
   opacity: 1;
   visibility: visible;
@@ -105,7 +172,6 @@ h2
 .grid-container
 {
   display: grid;
-  border: solid red;
   gap: 1em;
   grid-template-areas: "box-1"
   "box-2"
@@ -140,9 +206,8 @@ h1
 
 h2
 {
-    font-size: 5rem;
+    font-size: 2rem;
     transition: all 2s ease;
-    text-align: center;
 }
 
 }
