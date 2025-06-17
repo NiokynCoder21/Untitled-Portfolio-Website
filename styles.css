@@ -29,7 +29,7 @@ body
   animation: flicker 5s infinite;
 }
 
-.h1:hover 
+.dee:hover 
 {
   animation: flicker-yellow 5s infinite;
 }
