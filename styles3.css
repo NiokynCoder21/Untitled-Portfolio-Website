@@ -18,6 +18,7 @@ h1
 
 h2
 {
+  margin-top: 0;
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
@@ -27,7 +28,20 @@ h2
   animation: hueShift 5s infinite alternate;
 }
 
+.abouttext:hover
+{
+  animation: flicker 5s infinite;
+}
 
+.threedeetext:hover
+{
+  animation: flicker-yellow 5s infinite;
+}
+
+.twodeetext:hover
+{
+  animation: flicker-orange 5s infinite;
+}
 
 .abouttext
 {
@@ -35,7 +49,6 @@ h2
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
-  text-align: center;
 
   animation: hueShift 5s infinite alternate;
 
@@ -52,7 +65,6 @@ h2
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
   color: #F5EE42;
-  text-align: center;
 
   text-shadow: 0 0 20px #F5EE42, 0 0 40px #F5EE42;
 
@@ -75,18 +87,20 @@ h2
   display: flex;        /* put children in a row */
   gap: 2em;             /* spacing between items */
   align-items: center;  /* vertically align if needed */
-  justify-content: flex-start; /* or space-between, center, etc */
-  padding: 1em;
+  justify-content: center; /* or space-between, center, etc */
+  padding: 1em 1em 0.5em 1em; 
 }
 
 .nav a 
 {
   text-decoration: none;
 }
+
 .about a {
   text-decoration: none;
   color: inherit; /* Keep the text color same as h1 */
 }
+
 
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -97,6 +111,35 @@ h2
       0 0 40px #4e43e0;
   }
 
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+@keyframes flicker-yellow 
+{
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #F5EE42,
+      0 0 10px #F5EE42,
+      0 0 40px #F5EE42;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+@keyframes flicker-orange {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #F5C549,
+      0 0 10px #F5C549,
+      0 0 40px #F5C549;
+  }
   20%, 22%, 24%, 55% {
     opacity: 0.6;
     text-shadow: none;
@@ -206,6 +249,12 @@ h2
     text-align: center;
 }
 
+h3
+{
+    font-size: 1rem;
+    transition: all 2s ease;
+}
+
 }
 
 
@@ -221,6 +270,12 @@ h2
     font-size: 3rem;
     transition: all 2s ease;
     text-align: center;
+}
+
+h3
+{
+    font-size: 1rem;
+    transition: all 2s ease;
 }
 
 }
@@ -241,7 +296,7 @@ h2
 
 h3
 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     transition: all 2s ease;
 }
 
