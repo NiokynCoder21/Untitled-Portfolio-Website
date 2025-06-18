@@ -13,66 +13,90 @@
         <link rel="stylesheet" href="styles3.css">
     </head>
     <body>
+       
+       <div class = "nav"> 
+        <div class="about"> 
+          <a href="index.html">
+                <h3 class="abouttext"> Home</h3>
+           </a>
+       </div>
+ 
+           <div class="threedee"> 
+                <a href="index2.html">
+                  <h3 class="threedeetext"> 3D ART</h3>
+               </a>
+       </div>
+
+                  <div class="twodee"> 
+                <a href="index3.html">
+                  <h3 class="twodeetext"> 2D ART</h3>
+               </a>
+       </div>
+       </div>
 
       <h2 class = "title"> 2D ART</h2>
 
-      <div class="grid-container">
-        
+      <div class="grid-container">        
+
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/Builds Screenshot 2025.06.04 - 14.59.57.96.png" />
+            <img src = "Images/Builds Screenshot 2025.06.04 - 14.59.57.96.png" onclick="openFullscreen(this)"/>
            </div>
            <div class= "descriptionbox"> 
-            <h1> This is cools</h1>
+            <h1> Start Screen UI</h1>
            </div>
         </div>
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/Chuckle Brothers Exe Screenshot 2025.06.04 - 14.53.23.69.png" />
+            <img src = "Images/Chuckle Brothers Exe Screenshot 2025.06.04 - 14.53.23.69.png" onclick="openFullscreen(this)"/>
            </div>
            <div class= "descriptionbox"> 
-            <h1> This is cools</h1>
+            <h1> Start Screen UI</h1>
            </div>
         </div>
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/Untitled Online Cod V6 Screenshot 2025.06.04 - 15.14.18.30.png" />
+            <img src = "Images/Untitled Online Cod V6 Screenshot 2025.06.04 - 15.14.18.30.png" onclick="openFullscreen(this)"/>
            </div>
            <div class= "descriptionbox"> 
-            <h1> This is cools</h1>
+            <h1> Game Over Screen UI</h1>
            </div>
         </div>
                 <div class = "card">
            <div class = "image">
-            <img src = "Images/Stopwatch 2.png" />
+            <img src = "Images/Stopwatch 2.png" onclick="openFullscreen(this)"/>
          </div>
            <div class= "descriptionbox"> 
-            <h1> This is cools</h1>
+            <h1> Game Clock UI</h1>
            </div>
         </div>
 
         <div class = "card">
            <div class = "image">
-            <img src = "Images/Health Icon(no text).jpg" /> 
+            <img src = "Images/Health Icon(no text).jpg" onclick="openFullscreen(this)"/> 
          </div>
            <div class= "descriptionbox"> 
-            <h1> This is cools</h1>
+            <h1> Game Art</h1>
            </div>
         </div>
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/twiiter layout.jpg" /> 
+            <img src = "Images/twiiter layout.jpg" onclick="openFullscreen(this)"/> 
            </div>
            <div class= "descriptionbox"> 
-            <h1> This is cools</h1>
+            <h1> Game Art</h1>
            </div>
         </div>
 
       </div>
+
+               <div id="fullscreen-overlay" onclick="closeFullscreen()">
+           <img src="" alt="Fullscreen image">
+         </div>
         
-        <script src="" async defer></script>
+        <script src="script4.js" async defer></script>
     </body>
 </html>

@@ -5,19 +5,102 @@ body
 
 h1
 {
+  color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
-  color: white;
   text-align: center;
+
+  text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
+  
+  animation: hueShift 10s infinite alternate;
 }
 
 h2
 {
+  color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
   font-style: normal;
-  color: white;
+  text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
+  
+  animation: hueShift 5s infinite alternate;
+}
+
+
+
+.abouttext
+{
+    color: #4e43e0;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+  text-align: center;
+
+  animation: hueShift 5s infinite alternate;
+
+      text-shadow:
+    0 0 5px #4e43e0,
+    0 0 10px #4e43e0,
+    0 0 20px #4e43e0,
+    0 0 40px #4e43e0;
+}
+
+.threedeetext
+{
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+  color: #F5EE42;
+  text-align: center;
+
+  text-shadow: 0 0 20px #F5EE42, 0 0 40px #F5EE42;
+
+  animation: hueShift 5s infinite alternate;
+}
+
+.twodeetext
+{
+  color: #F5C549;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 400;  /* or any weight the font supports */
+  font-style: normal;
+  text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
+  
+  animation: hueShift 5s infinite alternate;
+}
+
+.nav 
+{
+  display: flex;        /* put children in a row */
+  gap: 2em;             /* spacing between items */
+  align-items: center;  /* vertically align if needed */
+  justify-content: flex-start; /* or space-between, center, etc */
+  padding: 1em;
+}
+
+.nav a 
+{
+  text-decoration: none;
+}
+.about a {
+  text-decoration: none;
+  color: inherit; /* Keep the text color same as h1 */
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #4e43e0,
+      0 0 10px #4e43e0,
+      0 0 40px #4e43e0;
+  }
+
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
 }
 
 .image {
@@ -28,13 +111,15 @@ h2
   border-radius: 10px;
 }
 
-.image img {
+.image img 
+{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;  /* ← switch from cover to contain */
+  background-color: black; /* ← so black bars show */
 }
 
 .card
@@ -51,6 +136,8 @@ h2
   justify-content: center;
 }
 
+
+
 img 
 {
     transition: transform 0.3s ease-in-out;
@@ -60,6 +147,50 @@ img:hover
 {
     transform: scale(1.2); /* Enlarges image by 20% on hover */
 }
+
+#fullscreen-overlay 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+
+#fullscreen-overlay img 
+{
+  max-width: 90%;
+  max-height: 90%;
+  transform: scale(0.8);
+  transition: transform 0.5s ease;
+}
+
+#fullscreen-overlay.active 
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+#fullscreen-overlay.active img 
+{
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+@keyframes hueShift 
+{
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(20deg); }
+}
+
 
 @media screen and (max-width: 600px) {
 h1
@@ -97,7 +228,7 @@ h2
 @media screen and (min-width: 1201px) {
 h1
 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     transition: all 2s ease;
 }
 
@@ -106,6 +237,12 @@ h2
     font-size: 5rem;
     transition: all 2s ease;
     text-align: center;
+}
+
+h3
+{
+    font-size: 3rem;
+    transition: all 2s ease;
 }
 
 }
