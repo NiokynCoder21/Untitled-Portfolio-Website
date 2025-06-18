@@ -11,24 +11,28 @@ body
   border-radius: 10px;
 }
 
-.fade-out {
+.fade-out 
+{
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: black; /* or white, or any color */
+  background: black; 
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease;
   z-index: 9999;
 }
-.fade-out.active {
+
+.fade-out.active 
+{
   pointer-events: all;
   opacity: 1;
 }
 
-.card a {
+.card a 
+{
   text-decoration: none;
-  color: inherit; /* Keep the text color same as h1 */
+  color: inherit; 
 }
 
 .grid-container
@@ -54,26 +58,11 @@ body
   animation: flicker-orange 5s infinite;
 }
 
-/*body:has(.two:hover) {
-  background-color:  #4e43e0;
-  transition: background-color 0.5s ease;
-}
-
-body:has(.dee:hover) {
-  background-color: #cca43e;
-  transition: background-color 0.5s ease;
-}
-
-body:has(.name:hover) {
-  background-color:  #c4bf36;
-  transition: background-color 0.5s ease;
-}*/
-
 .name
 {
   color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400;  
   font-style: normal;
 
   animation: hueShift 5s infinite alternate;
@@ -89,7 +78,7 @@ body:has(.name:hover) {
 {
   color: #F5EE42;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400;  
   font-style: normal;
 
     text-shadow: 0 0 20px #F5EE42, 0 0 40px #F5EE42;
@@ -101,7 +90,7 @@ body:has(.name:hover) {
 {
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400;  
   font-style: normal;
 
   text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
