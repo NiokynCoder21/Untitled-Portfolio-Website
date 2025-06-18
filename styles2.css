@@ -72,7 +72,7 @@ body
 {
     color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400; 
   font-style: normal;
 
   animation: hueShift 5s infinite alternate;
@@ -87,7 +87,7 @@ body
 .threedeetext
 {
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400; 
   font-style: normal;
   color: #F5EE42;
 
@@ -100,7 +100,7 @@ body
 {
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400; 
   font-style: normal;
   text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
   
@@ -109,10 +109,10 @@ body
 
 .nav 
 {
-  display: flex;        /* put children in a row */
-  gap: 2em;             /* spacing between items */
-  align-items: center;  /* vertically align if needed */
-  justify-content: center; /* or space-between, center, etc */
+  display: flex;     
+  gap: 2em;          
+  align-items: center;  
+  justify-content: center; 
   padding: 1em 1em 0.5em 1em; 
 }
 
@@ -123,7 +123,7 @@ body
 
 .about a {
   text-decoration: none;
-  color: inherit; /* Keep the text color same as h1 */
+  color: inherit;
 }
 
 h1:hover
@@ -148,7 +148,7 @@ h2
 {
   margin-top: 0;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400; 
   font-style: normal;
   color: #F5EE42;
 
@@ -167,7 +167,7 @@ h2
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: black; /* or white, or any color */
+  background: black; 
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -185,13 +185,13 @@ img
 
 img:hover 
 {
-    transform: scale(1.2); /* Enlarges image by 20% on hover */
+    transform: scale(1.2); 
 }
 
 .image {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%; 
   overflow: hidden;
   border-radius: 10px;
 }
@@ -202,8 +202,8 @@ img:hover
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;  /* ← switch from cover to contain */
-  background-color: black; /* ← so black bars show */
+  object-fit: contain;  
+  background-color: black;
 }
 
 .card

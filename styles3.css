@@ -47,7 +47,7 @@ h2
 {
     color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400; 
   font-style: normal;
 
   animation: hueShift 5s infinite alternate;
@@ -62,7 +62,7 @@ h2
 .threedeetext
 {
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400; 
   font-style: normal;
   color: #F5EE42;
 
@@ -75,7 +75,7 @@ h2
 {
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
-  font-weight: 400;  /* or any weight the font supports */
+  font-weight: 400;  
   font-style: normal;
   text-shadow: 0 0 20px #F5C549, 0 0 40px #F5C549;
   
@@ -84,10 +84,10 @@ h2
 
 .nav 
 {
-  display: flex;        /* put children in a row */
-  gap: 2em;             /* spacing between items */
-  align-items: center;  /* vertically align if needed */
-  justify-content: center; /* or space-between, center, etc */
+  display: flex;       
+  gap: 2em;             
+  align-items: center;  
+  justify-content: center; 
   padding: 1em 1em 0.5em 1em; 
 }
 
@@ -98,7 +98,7 @@ h2
 
 .about a {
   text-decoration: none;
-  color: inherit; /* Keep the text color same as h1 */
+  color: inherit; 
 }
 
 
