@@ -1,17 +1,17 @@
-body
+body /* this my body stuff background and some padding so the content is not exactly on the edges */
 {
   padding: min(50px, 7%);
   background-color: black;
 }
 
-.card
+.card /* this is the card that will hold the content for the page*/
 {
   padding: 1em;
   text-align: center;
   border-radius: 10px;
 }
 
-.fade-out 
+.fade-out /* this is the beginning of the fade out effect*/
 {
   position: fixed;
   top: 0; left: 0;
@@ -23,19 +23,19 @@ body
   z-index: 9999;
 }
 
-.fade-out.active 
+.fade-out.active /* when the fade effect is active*/
 {
   pointer-events: all;
   opacity: 1;
 }
 
-.card a 
+.card a /* this makes it so the link does not have a line underneath it*/
 {
   text-decoration: none;
   color: inherit; 
 }
 
-.grid-container
+.grid-container /* this is the grid - it arranges my items into colums and rows*/
 {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
@@ -43,22 +43,22 @@ body
   justify-content: center;
 }
 
-.name:hover 
+.name:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker 5s infinite;
 }
 
-.dee:hover 
+.dee:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker-yellow 5s infinite;
 }
 
-.two:hover
+.two:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker-orange 5s infinite;
 }
 
-.name
+.name /* this is the text syling with a animation*/
 {
   color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
@@ -74,7 +74,7 @@ body
     0 0 40px #4e43e0;
 }
 
-.dee
+.dee /* this is the text syling with a animation*/
 {
   color: #F5EE42;
   font-family: 'Tilt Neon', sans-serif;
@@ -86,7 +86,7 @@ body
       animation: hueShift 5s infinite alternate;
 }
 
-.two
+.two /* this is the text syling with a animation*/
 {
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
@@ -98,7 +98,8 @@ body
   animation: hueShift 5s infinite alternate;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) /* adjusts the text for different screens and adds smooth transition*/
+{
 h1
 {
     font-size: 3rem;
@@ -108,7 +109,8 @@ h1
 }
 
 
-@media screen and (min-width: 601px) and (max-width:1200px) {
+@media screen and (min-width: 601px) and (max-width:1200px) /* adjusts the text for different screens and adds smooth transition*/
+{
 h1
 {
     font-size: 7rem;
@@ -117,7 +119,8 @@ h1
 
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) /* adjusts the text for different screens and adds smooth transition*/
+{
 h1
 {
     font-size: 9rem;
@@ -126,7 +129,8 @@ h1
 
 }
 
-@keyframes flicker {
+@keyframes flicker /* a flicker animation*/
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -141,7 +145,7 @@ h1
   }
 }
 
-@keyframes flicker-yellow 
+@keyframes flicker-yellow  /* a flicker animation*/
 {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
@@ -156,7 +160,8 @@ h1
   }
 }
 
-@keyframes flicker-orange {
+@keyframes flicker-orange  /* a flicker animation*/
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -170,7 +175,7 @@ h1
   }
 }
 
-@keyframes hueShift 
+@keyframes hueShift  /* a hue shift animation*/
 {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(20deg); }

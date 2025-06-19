@@ -8,58 +8,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet"> <!-- This is the font-->
         <link rel="stylesheet" href="styles5.css">
     </head>
     <body>
          
-       <div class = "nav"> 
+             <div class = "nav"> <!-- This is the object that will hold all my navigation stuff-->
         <div class="about"> 
-          <a href="index10.html">
+          <a href="index10.html"> <!-- This makes the word a link the user can press-->
                 <h3 class="abouttext"> About</h3>
            </a>
        </div>
  
            <div class="threedee"> 
-                <a href="index2.html">
+                <a href="index2.html"> <!-- This makes the word a link the user can press-->
                   <h3 class="threedeetext"> 3D ART</h3>
                </a>
        </div>
 
                   <div class="twodee"> 
-                <a href="index3.html">
+                <a href="index3.html"> <!-- This makes the word a link the user can press-->
                   <h3 class="twodeetext"> 2D ART</h3>
                </a>
        </div>
        </div>
 
-        <div class="grid-container">
+        <div class="grid-container"> <!-- This is the grid that will hold all main elements--> 
 
-        <div class = "bigcard" style="grid-area: box-1">
+        <div class = "bigcard" style="grid-area: box-1"> <!-- The style allows me to easily identify which object this is on the grid-->  
            <div class = "image"> 
-            <img class = "mainImage" src = "Images/canister 9.png" onclick="openFullscreen(this)" /></div>
+            <img class = "mainImage" src = "Images/canister 9.png" onclick="openFullscreen(this)" /></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>
 
-        <div class = "bigcard" style="grid-area: box-2">
+        <div class = "bigcard" style="grid-area: box-2"> <!-- The style allows me to easily identify which object this is on the grid-->  
            <div class = "image"> 
-            <img class = "mainImage" src = "Images/canister 3.png" onclick="openFullscreen(this)" /></div>
+            <img class = "mainImage" src = "Images/canister 3.png" onclick="openFullscreen(this)" /></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>
 
-        <div class = "card" style="grid-area: box-3">
+        <div class = "card" style="grid-area: box-3"> <!-- The style allows me to easily identify which object this is on the grid-->  
            <div class = "image"> 
-            <img class = "smallImg" src = "Images/canister 2.png" onclick="openFullscreen(this)"/></div>
+            <img class = "smallImg" src = "Images/canister 2.png" onclick="openFullscreen(this)"/></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>
 
-        <div class = "card" style="grid-area: box-4">
+        <div class = "card" style="grid-area: box-4"> <!-- The style allows me to easily identify which object this is on the grid-->  
            <div class = "image"> 
-            <img class = "smallImg"  src = "Images/canister 1.png" onclick="openFullscreen(this)"/></div>
+            <img class = "smallImg"  src = "Images/canister 1.png" onclick="openFullscreen(this)"/></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>     
 
          </div>
 
-         <div id="fullscreen-overlay" onclick="closeFullscreen()">
+         <div id="fullscreen-overlay" onclick="closeFullscreen()"> <!-- This makes is so when the user presses on screen again it exits full screen-->
            <img src="" alt="Fullscreen image">
          </div>
+
+         <div class="fade-out"></div> <!-- an animation effect-->
         
         <script src="script.js" async defer></script>
     </body>

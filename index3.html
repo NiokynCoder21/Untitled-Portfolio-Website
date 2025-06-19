@@ -9,38 +9,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet"> <!-- This is the font-->
         <link rel="stylesheet" href="styles3.css">
     </head>
     <body>
        
-       <div class = "nav"> 
+             <div class = "nav"> <!-- This is the object that will hold all my navigation stuff-->
         <div class="about"> 
-          <a href="index10.html">
+          <a href="index10.html"> <!-- This makes the word a link the user can press-->
                 <h3 class="abouttext"> About</h3>
            </a>
        </div>
  
            <div class="threedee"> 
-                <a href="index2.html">
+                <a href="index2.html"> <!-- This makes the word a link the user can press-->
                   <h3 class="threedeetext"> 3D ART</h3>
                </a>
        </div>
 
                   <div class="twodee"> 
-                <a href="index3.html">
+                <a href="index3.html"> <!-- This makes the word a link the user can press-->
                   <h3 class="twodeetext"> 2D ART</h3>
                </a>
        </div>
        </div>
 
-      <h2 class = "title"> 2D ART</h2>
+      <h2 class = "title"> 2D ART</h2> <!-- This is the title-->
 
-      <div class="grid-container">        
+      <div class="grid-container"> <!-- This is the grid that will hold all main elements-->      
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/Builds Screenshot 2025.06.04 - 14.59.57.96.png" onclick="openFullscreen(this)"/>
+            <img src = "Images/Builds Screenshot 2025.06.04 - 14.59.57.96.png" onclick="openFullscreen(this)"/> <!-- This makes is so when the user presses an img it goes full screen-->
            </div>
            <div class= "descriptionbox"> 
             <h1> Start Screen UI</h1>
@@ -49,7 +49,7 @@
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/Chuckle Brothers Exe Screenshot 2025.06.04 - 14.53.23.69.png" onclick="openFullscreen(this)"/>
+            <img src = "Images/Chuckle Brothers Exe Screenshot 2025.06.04 - 14.53.23.69.png" onclick="openFullscreen(this)"/>  <!-- This makes is so when the user presses an img it goes full screen-->
            </div>
            <div class= "descriptionbox"> 
             <h1> Start Screen UI</h1>
@@ -58,7 +58,7 @@
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/Untitled Online Cod V6 Screenshot 2025.06.04 - 15.14.18.30.png" onclick="openFullscreen(this)"/>
+            <img src = "Images/Untitled Online Cod V6 Screenshot 2025.06.04 - 15.14.18.30.png" onclick="openFullscreen(this)"/>  <!-- This makes is so when the user presses an img it goes full screen-->
            </div>
            <div class= "descriptionbox"> 
             <h1> Game Over Screen UI</h1>
@@ -66,7 +66,7 @@
         </div>
                 <div class = "card">
            <div class = "image">
-            <img src = "Images/Stopwatch 2.png" onclick="openFullscreen(this)"/>
+            <img src = "Images/Stopwatch 2.png" onclick="openFullscreen(this)"/>  <!-- This makes is so when the user presses an img it goes full screen-->
          </div>
            <div class= "descriptionbox"> 
             <h1> Game Clock UI</h1>
@@ -75,7 +75,7 @@
 
         <div class = "card">
            <div class = "image">
-            <img src = "Images/Health Icon(no text).jpg" onclick="openFullscreen(this)"/> 
+            <img src = "Images/Health Icon(no text).jpg" onclick="openFullscreen(this)"/>  <!-- This makes is so when the user presses an img it goes full screen-->
          </div>
            <div class= "descriptionbox"> 
             <h1> Game Art</h1>
@@ -84,7 +84,7 @@
 
         <div class = "card">
            <div class = "image"> 
-            <img src = "Images/twiiter layout.jpg" onclick="openFullscreen(this)"/> 
+            <img src = "Images/twiiter layout.jpg" onclick="openFullscreen(this)"/>  <!-- This makes is so when the user presses an img it goes full screen-->
            </div>
            <div class= "descriptionbox"> 
             <h1> Game Art</h1>
@@ -93,10 +93,12 @@
 
       </div>
 
-               <div id="fullscreen-overlay" onclick="closeFullscreen()">
+               <div id="fullscreen-overlay" onclick="closeFullscreen()">  <!-- This makes is so when the user presses on screen again it exits full screen-->
            <img src="" alt="Fullscreen image">
          </div>
+
+         <div class="fade-out"></div> <!-- an animation effect-->
         
-        <script src="script4.js" async defer></script>
+        <script src="script.js" async defer></script>
     </body>
 </html>

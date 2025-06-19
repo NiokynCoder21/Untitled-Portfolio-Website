@@ -8,71 +8,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet"> <!-- This is the font-->
         <link rel="stylesheet" href="styles4.css">
     </head>
     <body>
          
-       <div class = "nav"> 
+             <div class = "nav"> <!-- This is the object that will hold all my navigation stuff-->
         <div class="about"> 
-          <a href="index10.html">
+          <a href="index10.html"> <!-- This makes the word a link the user can press-->
                 <h3 class="abouttext"> About</h3>
            </a>
        </div>
  
            <div class="threedee"> 
-                <a href="index2.html">
+                <a href="index2.html"> <!-- This makes the word a link the user can press-->
                   <h3 class="threedeetext"> 3D ART</h3>
                </a>
        </div>
 
                   <div class="twodee"> 
-                <a href="index3.html">
+                <a href="index3.html"> <!-- This makes the word a link the user can press-->
                   <h3 class="twodeetext"> 2D ART</h3>
                </a>
        </div>
        </div>
 
-        <div class="grid-container">
+        <div class="grid-container"> <!-- This is the grid that will hold all main elements-->   
 
-        <div class = "bigcard" style="grid-area: box-1">
+        <div class = "bigcard" style="grid-area: box-1"> <!-- The style allows me to easily identify which object this is on the grid-->   
            <div class = "image"> 
-            <img class = "mainImage" src = "Images/small building 14.png" onclick="openFullscreen(this)" /></div>
+            <img class = "mainImage" src = "Images/small building 14.png" onclick="openFullscreen(this)" /></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>
 
-        <div class = "bigcard" style="grid-area: box-5">
+        <div class = "bigcard" style="grid-area: box-5">  <!-- The style allows me to easily identify which object this is on the grid-->   
            <div class = "image"> 
-            <img class = "mainImage" src = "Images/small building 13.png" onclick="openFullscreen(this)" /></div>
+            <img class = "mainImage" src = "Images/small building 13.png" onclick="openFullscreen(this)" /></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>
 
-        <div class = "wordcard" style="grid-area: box-2">
+        <div class = "wordcard" style="grid-area: box-2">  <!-- The style allows me to easily identify which object this is on the grid-->   
            <div class = "description">
             <h1> Here you can see my 4 different images. The the first 2 is the final results the other 2 are work in progress of how i got to the final result.</h1> 
             <h1> I am proudest of the door which took a bit of time but i love the detail i was able to archive with it</h1>
             <h1> The air conditioner was interesting as i found the front part a bit challenging but references helped.</h1>
             <h1> The composition also changed a bit during the making of the render, i have the alternate option here as well where i wanted to add a background as well. I also removed a ton for the version i decided to stay with. </h1>
-            <div class="icon-container">
+
+            <div class="icon-container"> <!-- This is to hold my blender tag-->
               <img src="Images/images.png">
            <span class="label">Blender</span>
        </div>
            </div>
         </div>
 
-        <div class = "card" style="grid-area: box-3">
+        <div class = "card" style="grid-area: box-3">  <!-- The style allows me to easily identify which object this is on the grid-->   
            <div class = "image"> 
-            <img class = "smallImg" src = "Images/small building.png" onclick="openFullscreen(this)"/></div>
+            <img class = "smallImg" src = "Images/small building.png" onclick="openFullscreen(this)"/></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>
 
-        <div class = "card" style="grid-area: box-4">
+        <div class = "card" style="grid-area: box-4">  <!-- The style allows me to easily identify which object this is on the grid-->   
            <div class = "image"> 
-            <img class = "smallImg"  src = "Images/small building 3.png" onclick="openFullscreen(this)"/></div>
+            <img class = "smallImg"  src = "Images/small building 3.png" onclick="openFullscreen(this)"/></div> <!-- This makes is so when the user presses an img it goes full screen-->
         </div>     
 
          </div>
 
-         <div id="fullscreen-overlay" onclick="closeFullscreen()">
+         <div id="fullscreen-overlay" onclick="closeFullscreen()"> <!-- This makes is so when the user presses on screen again it exits full screen-->
            <img src="" alt="Fullscreen image">
          </div>
+
+         <div class="fade-out"></div> <!-- an animation effect-->
         
         <script src="script.js" async defer></script>
     </body>

@@ -1,15 +1,4 @@
-  function openFullscreen(img) //to allow user to go full screen
-  {
-    if (img.requestFullscreen) {
-      img.requestFullscreen();
-    } else if (img.webkitRequestFullscreen) {
-      img.webkitRequestFullscreen();
-    } else if (img.msRequestFullscreen) { 
-      img.msRequestFullscreen();
-    }
-  }
-
-  function openFullscreen(img) 
+  function openFullscreen(img) //starts the full screen effect
   {
   const overlay = document.getElementById('fullscreen-overlay');
   const overlayImg = overlay.querySelector('img');
@@ -17,8 +6,24 @@
   overlay.classList.add('active');
 }
 
-function closeFullscreen() 
+function closeFullscreen() //ends the full screen effect
 {
   const overlay = document.getElementById('fullscreen-overlay');
   overlay.classList.remove('active');
 }
+
+  const links = document.querySelectorAll("a");
+  const fade = document.querySelector(".fade-out");
+
+  links.forEach(link => //makes my links use the fade out animation
+    {
+    if (link.hostname === window.location.hostname) {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        fade.classList.add("active");
+        setTimeout(() => {
+          window.location = link.href;
+        }, 500);
+      });
+    }
+  });

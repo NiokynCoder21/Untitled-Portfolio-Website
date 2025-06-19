@@ -1,12 +1,13 @@
-body
+body /* this my body stuff background and some padding so the content is not exactly on the edges */
 {
   background-color: black;
 }
 
-.image {
+.image /* makes the a responsive box and adds rounded corners*/
+{
   position: relative;
   width: 100%;
-  height: 100%; /* fill the parent card completely */
+  height: 100%; 
   overflow: hidden;
   border-radius: 10px;
 }
@@ -16,27 +17,28 @@ body
   cursor: pointer; /* show pointer on hover */
 }
 
-.image img {
+.image img /* makes the image scale inside without distortion or cropping and allowing for black bars if necessary*/
+{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;  /* ← switch from cover to contain */
-  background-color: black; /* ← so black bars show */
+  object-fit: contain;
+  background-color: black; 
 }
 
-img 
+img /* adds transition for the zoom in effect*/
 {
     transition: transform 0.3s ease-in-out;
 }
 
-img:hover 
+img:hover /* when the user hovers over a img it will do a zoom in effect*/ 
 {
     transform: scale(1.2); /* Enlarges image by 20% on hover */
 }
 
-h1
+h1 /* this is the text syling with a animation*/
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
@@ -45,7 +47,7 @@ h1
   text-align: left;
 }
 
-h2
+h2 /* this is the text syling with a animation*/
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
@@ -54,22 +56,22 @@ h2
   text-align:end;
 }
 
-.abouttext:hover
+.abouttext:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker 5s infinite;
 }
 
-.threedeetext:hover
+.threedeetext:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker-yellow 5s infinite;
 }
 
-.twodeetext:hover
+.twodeetext:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker-orange 5s infinite;
 }
 
-.abouttext
+.abouttext /* this is the text syling with a animation*/
 {
     color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
@@ -85,7 +87,7 @@ h2
     0 0 40px #4e43e0;
 }
 
-.threedeetext
+.threedeetext /* this is the text syling with a animation*/
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
@@ -97,7 +99,7 @@ h2
   animation: hueShift 5s infinite alternate;
 }
 
-.twodeetext
+.twodeetext /* this is the text syling with a animation*/
 {
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
@@ -108,7 +110,7 @@ h2
   animation: hueShift 5s infinite alternate;
 }
 
-.nav 
+.nav /* the container for my nav objects with settings the objects are centered*/
 {
   display: flex;        /* put children in a row */
   gap: 2em;             /* spacing between items */
@@ -117,17 +119,19 @@ h2
   padding: 1em 1em 0.5em 1em; 
 }
 
-.nav a 
+.nav a /* this makes it so the link does not have a line underneath it*/
 {
   text-decoration: none;
 }
 
-.about a {
+.about a /* this makes it so the link does not have a line underneath it*/
+{
   text-decoration: none;
   color: inherit; /* Keep the text color same as h1 */
 }
 
-@keyframes flicker {
+@keyframes flicker /* a flicker animation*/
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -142,7 +146,7 @@ h2
   }
 }
 
-@keyframes flicker-yellow 
+@keyframes flicker-yellow /* a flicker animation*/
 {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
@@ -157,7 +161,8 @@ h2
   }
 }
 
-@keyframes flicker-orange {
+@keyframes flicker-orange /* a flicker animation*/
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -171,7 +176,7 @@ h2
   }
 }
 
-@keyframes hueShift 
+@keyframes hueShift /* a hue shift animation*/
 {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(20deg); }
@@ -184,7 +189,7 @@ h2
     padding: 1em;
 }
 
-p
+p /* this is the text syling with a animation*/
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
@@ -193,7 +198,8 @@ p
   text-align: left;
 }
 
-.icon-container {
+.icon-container /* creates a flex box that holds the icon and text side by side*/
+{
     display: flex;
     align-items: center;
     background-color: rgba(157, 156, 156, 0.393);
@@ -202,13 +208,15 @@ p
     width: fit-content;
 }
 
-.icon-container img {
-    width: 20px; /* Adjust as needed */
+.icon-container img /* makes sure the image is small so it does not touch text*/
+{
+    width: 20px;
     height: 20px;
     margin-right: 10px;
 }
 
-.label {
+.label /* icon style*/
+{
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
@@ -236,7 +244,7 @@ p
 
 
 
-#fullscreen-overlay 
+#fullscreen-overlay /* creates a hidden fullscreen background, centers the image centrally using flex and uses opacity and visibilty to show and hide */
 {
   position: fixed;
   top: 0;
@@ -253,7 +261,7 @@ p
   z-index: 9999;
 }
 
-#fullscreen-overlay img 
+#fullscreen-overlay img /* keeps the image within 90% of the screen, starts slightly zoomed out and scales smoothly*/
 {
   max-width: 90%;
   max-height: 90%;
@@ -261,19 +269,20 @@ p
   transition: transform 0.5s ease;
 }
 
-#fullscreen-overlay.active 
+#fullscreen-overlay.active /* when 1 is added in java it makes this overerlay visible*/
 {
   opacity: 1;
   visibility: visible;
 }
 
-#fullscreen-overlay.active img 
+#fullscreen-overlay.active img /* when active the image zooms in to full size smoothly*/
 {
   transform: scale(1);
   transition: transform 0.5s ease;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) /* adjusts the texts for different screens, gives a custom grid for diferent screens and adds smooth transition*/
+{
 h1
 {
     font-size: 1rem;
@@ -307,7 +316,8 @@ h2
 
 }
 
-@media screen and (min-width: 601px) and (max-width:1200px) {
+@media screen and (min-width: 601px) and (max-width:1200px) /* adjusts the texts for different screens, gives a custom grid for diferent screens and adds smooth transition*/
+{
 h1
 {
     font-size: 1.1rem;
@@ -334,7 +344,8 @@ h2
 
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) /* adjusts the texts for different screens, gives a custom grid for diferent screens and adds smooth transition*/
+{
 h1
 {
     font-size: 1.3rem;
@@ -352,7 +363,6 @@ h2
   display: grid;
   grid-auto-rows: 200px;
   grid-auto-columns: 200px;
-  /*border: solid red;*/
   gap: 1em;
   grid-template-areas: "box-1 box-1 box-5 box-5 box-2 box-2"
   "box-1 box-1 box-5 box-5 box-2 box-2"

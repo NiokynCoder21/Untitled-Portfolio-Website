@@ -1,52 +1,54 @@
-body
+body /* this my body stuff background and some padding so the content is not exactly on the edges */
 {
   background-color: black;
 }
 
-.abouttext:hover
+.abouttext:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker 5s infinite;
 }
 
-.links:hover
+.links:hover /* this is to play a animation when the user hovers over the text*/
 {
     animation: flicker 7s infinite;
 }
 
 .links
 {
-  cursor: pointer; 
+  cursor: pointer; /* show pointer on hover */
 }
 
-.threedeetext:hover
+.threedeetext:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker-yellow 5s infinite;
 }
 
-.twodeetext:hover
+.twodeetext:hover /* this is to play a animation when the user hovers over the text*/
 {
   animation: flicker-orange 5s infinite;
 }
 
-.image {
+.image /* makes the a responsive box and adds rounded corners*/
+{
   position: relative;
   width: 100%;
-  height: 100%; /* fill the parent card completely */
+  height: 100%; 
   overflow: hidden;
   border-radius: 10px;
 }
 
-.image img {
+.image img /* makes the image scale inside without distortion or cropping and allowing for black bars if necessary*/
+{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;  /* ← switch from cover to contain */
-  background-color: black; /* ← so black bars show */
+  object-fit: contain; 
+  background-color: black;
 }
 
-.abouttext
+.abouttext /* this is the text syling with a animation*/
 {
     color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
@@ -62,7 +64,7 @@ body
     0 0 40px #4e43e0;
 }
 
-.threedeetext
+.threedeetext /* this is the text syling with a animation*/
 {
   font-family: 'Tilt Neon', sans-serif;
   font-weight: 400;  /* or any weight the font supports */
@@ -74,7 +76,7 @@ body
   animation: hueShift 5s infinite alternate;
 }
 
-.twodeetext
+.twodeetext /* this is the text syling with a animation*/
 {
   color: #F5C549;
   font-family: 'Tilt Neon', sans-serif;
@@ -85,21 +87,21 @@ body
   animation: hueShift 5s infinite alternate;
 }
 
-.nav 
+.nav /* the container for my nav objects with settings the objects are centered*/
 {
-  display: flex;        /* put children in a row */
-  gap: 2em;             /* spacing between items */
-  align-items: center;  /* vertically align if needed */
-  justify-content: center; /* or space-between, center, etc */
+  display: flex;     
+  gap: 2em;           
+  align-items: center; 
+  justify-content: center;
   padding: 1em 1em 0.5em 1em; 
 }
 
-.socialM
+.socialM /* this will hold my social media content*/
 {
-  display: flex;        /* put children in a row */
-  gap: 2em;             /* spacing between items */
-  align-items: center;  /* vertically align if needed */
-  justify-content: center; /* or space-between, center, etc */
+  display: flex;      
+  gap: 2em;           
+  align-items: center; 
+  justify-content: center; 
   padding: 1em 1em 0.5em 1em; 
 }
 
@@ -110,23 +112,25 @@ body
     border-radius: 25px;
 }
 
-.nav a 
+.nav a /* this makes it so the link does not have a line underneath it*/
 {
   text-decoration: none;
 }
 
-.about a {
-  text-decoration: none;
-  color: inherit; /* Keep the text color same as h1 */
-}
-
-.socialM a
+.about a /* this makes it so the link does not have a line underneath it*/
 {
   text-decoration: none;
-  color: inherit; /* Keep the text color same as h1 */
+  color: inherit;
 }
 
-@keyframes flicker {
+.socialM a /* this makes it so the link does not have a line underneath it*/
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes flicker /* a flicker animation*/
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -141,7 +145,7 @@ body
   }
 }
 
-@keyframes flicker-yellow 
+@keyframes flicker-yellow /* a flicker animation*/
 {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
@@ -156,7 +160,8 @@ body
   }
 }
 
-@keyframes flicker-orange {
+@keyframes flicker-orange /* a flicker animation*/
+{
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -170,13 +175,13 @@ body
   }
 }
 
-@keyframes hueShift 
+@keyframes hueShift /* a hue shift animation*/
 {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(20deg); }
 }
 
-h1
+h1 /* this is the text syling with a animation*/
 {
   color: #4e43e0;
   font-family: 'Tilt Neon', sans-serif;
@@ -187,7 +192,6 @@ h1
     0 0 5px #4e43e0,
     0 0 40px #4e43e0;
 }
-
 
 .description
 {
@@ -207,7 +211,8 @@ h1
   border-radius: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) /* adjusts the texts for different screens, gives a custom grid for diferent screens and adds smooth transition*/
+{
 h1
 {
     font-size: 1rem;
@@ -235,7 +240,8 @@ h2
 
 }
 
-@media screen and (min-width: 601px) and (max-width:1200px) {
+@media screen and (min-width: 601px) and (max-width:1200px) /* adjusts the texts for different screens, gives a custom grid for diferent screens and adds smooth transition*/
+{
 h1
 {
     font-size: 1.1rem;
@@ -262,7 +268,8 @@ h2
 
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) /* adjusts the texts for different screens, gives a custom grid for diferent screens and adds smooth transition*/
+{
 h1
 {
     font-size: 1.3rem;
